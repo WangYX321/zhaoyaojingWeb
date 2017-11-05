@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>particles.js</title>
+  <meta name="description" content="照妖镜区块链 - 助你轻松分辨信息真伪">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/owl.theme.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.1.0.min.js">
+  	var APP_ID = '8507qMJfqtuAu9GLVvBLaRWi-gzGzoHsz';
+	var APP_KEY = '9xusHPdF0PDM5wwS1bceqhko';
+
+	AV.init({
+	  appId: APP_ID,
+	  appKey: APP_KEY
+});
+
+
+var TestObject = AV.Object.extend('TestObject');
+var testObject = new TestObject();
+testObject.save({
+  words: 'Hello World!'
+}).then(function(object) {
+  alert('LeanCloud Rocks!');
+})
+
+  </script>
+
+
+</head>
+<body>
+
+<!-- count particles -->
+
+
+<!-- particles.js container -->
+<div id="particles-js">
+
+	    <img class="logo" src="img/logo.png">
+
+	<div class="col-md-12" id="contentsection">
+
+       	<div class="headersontop">
+	       	<h1> <p class = "headerone" style="">无PS，无篡改</p> </h1> 
+
+	        <h3> <p class = "headertwo" style="">照妖镜区块链 - 助你轻松分辨信息真伪</p> </h3> 
+ 		</div>
+
+        <div class="row" id="searchitems">
+            <div class="search">         
+                <input type="text" class="searchTerm" id="searchTerm"placeholder="输入6位数验证码进行真伪证实">
+
+                <button value="Hide" class="searchButton"> 
+                    	 验证
+                </button>
+           	</div>
+
+         </div>  
+
+         <div class="col-md-6 col-md-offset-3" id="verificationcontent" style="display: none">
+         	<div id="verificationtext">
+	         	<table class="contenttable">
+					  <tr>
+					     <th>Value</th>
+					     <th>Time Stamp</th>
+					  </tr>
+					  <tr>
+					     <td><img src="img/munchlax_iphonescreenshot.jpg" id="contentimage"></td>
+					     <td>
+					    	<p>2017-10-20T05:15:48.000Z </p>
+					 		<p></p>
+					 	</td>
+
+					  </tr>
+					  <tr>
+					     <th></th>
+					     <td></td>
+					  </tr>
+					   <tr>
+					     <td></td>
+					     <td></td>
+					  </tr>
+				</table>
+         	</div>
+
+         </div>  
+
+         <div class="col-md-6 col-md-offset-3" id="verificationcontent2" style="display: none">
+         	<div id="verificationtext">
+	         	<table class="contenttable">
+					  <tr>
+					     <th>Value</th>
+					     <th>Time Stamp</th>
+					  </tr>
+					  <tr>
+					     <td>PM2.5 Level: 500</td>
+					     <td>2017-10-20T05:15:48.000Z</td>
+					  </tr>
+					  <tr>
+					     <td>PM2.5 Level: 500</td>
+					     <td>2017-10-20T05:15:48.000Z</td>
+					  </tr>
+					   <tr>
+					     <td>PM2.5 Level: 500</td>
+					     <td>2017-10-20T05:15:48.000Z</td>
+					  </tr>
+					  <tr>
+					     <td>PM2.5 Level: 500</td>
+					     <td>2017-10-20T05:15:48.000Z</td>
+					  </tr>
+					  <tr>
+					     <td>PM2.5 Level: 500</td>
+					     <td>2017-10-20T05:15:48.000Z</td>
+					  </tr>
+					  <tr>
+					     <td>PM2.5 Level: 500</td>
+					     <td>2017-10-20T05:15:48.000Z</td>
+					  </tr>
+					  <tr>
+					     <td>PM2.5 Level: 500</td>
+					     <td>2017-10-20T05:15:48.000Z</td>
+					  </tr>
+					  <tr>
+					     <td>PM2.5 Level: 500</td>
+					     <td>2017-10-20T05:15:48.000Z</td>
+					  </tr>
+					  <tr>
+					     <td>PM2.5 Level: 500</td>
+					     <td>2017-10-20T05:15:48.000Z</td>
+					  </tr>
+					  <tr>
+					     <td>PM2.5 Level: 500</td>
+					     <td>2017-10-20T05:15:48.000Z</td>
+					  </tr>
+					  <tr>
+					     <td>PM2.5 Level: 500</td>
+					     <td>2017-10-20T05:15:48.000Z</td>
+					  </tr>
+
+				</table>
+         	</div>
+
+         </div>                 
+     </div>
+</div>
+
+
+<div class="contenttwo">
+	<p> Remaining content</p>
+
+</div>
+
+<!-- scripts -->
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+
+<script type="text/javascript">
+	$(".searchButton").click(function() {
+	
+		var token = document.getElementById("searchTerm").value;
+
+		if (token == "hhhhhh"){
+	     	$("#verificationcontent2").show(500);	
+	     	$("#verificationcontent").hide();
+	     	$(".headersontop").hide(1200);
+		}
+		else {
+		$("#verificationcontent").show(500);	
+		$("#verificationcontent2").hide();	
+		$(".headersontop").hide(1200);
+
+
+	   }
+	    
+	  });
+
+	var HttpClient = function() {
+    this.get = function(aUrl, aCallback) {
+        var anHttpRequest = new XMLHttpRequest();
+        anHttpRequest.onreadystatechange = function() { 
+            if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+                aCallback(anHttpRequest.responseText);
+        }
+
+        anHttpRequest.open( "GET", aUrl, true );            
+        anHttpRequest.send( null );
+    	}
+	}
+
+	
+
+
+</script>
+<!-- stats.js -->
+
+
+</body>
+</html>
